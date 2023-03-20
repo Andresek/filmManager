@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ManagerFilmTest {
 
     @Test
-    public void addTest() {
+    public void addFilm() {
         ManagerFilm film = new ManagerFilm();
 
         film.add("film1");
@@ -20,7 +20,7 @@ class ManagerFilmTest {
     }
 
     @Test
-    public void findLastTest() {
+    public void findLastWhenLimitEqualNumberOfFilms() {
         ManagerFilm film = new ManagerFilm(3);
 
 
@@ -34,7 +34,7 @@ class ManagerFilmTest {
     }
 
     @Test
-    public void findLastTest2() {
+    public void findLastWhenLimitOverNumberOfFilms() {
         ManagerFilm film = new ManagerFilm(6);
 
 
@@ -48,7 +48,7 @@ class ManagerFilmTest {
     }
 
     @Test
-    public void findLastTest3() {
+    public void findLastWhenLimitLessNumberOfFilms() {
         ManagerFilm film = new ManagerFilm(2);
 
 
